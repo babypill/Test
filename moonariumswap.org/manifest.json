@@ -2,8 +2,7 @@
   "short_name": "MOONS",
   "name": "Moonarium Swap",
   "description": "Farm MOONS with MOONS LP Tokens",
-  "homepage_url": "https://babypill.github.io/Test/
-",
+  "homepage_url": "https://babypill.github.io/Test/",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#A55ADF",
