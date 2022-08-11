@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.webp" />
+    <link rel="canonical" href="">
+    <meta name="theme-color" content="#242735">
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- SEO -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="Bombcrypto">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta itemprop="name" content="Bombcrypto" />
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="" />
+
+    <title>Bombcrypto Staking | Earn Bcoins</title>
+    <link rel="stylesheet" href="assets/css/style.css?v0.2">
+
+    <!-- Global site tag (gtag.js) - Google Ads: 441323406 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-441323406"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-441323406');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '5243804555639550');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=5243804555639550&ev=PageView&noscript=1"
+/></noscript>
+    <!-- End Meta Pixel Code -->
+    <script>
+        ! function(w, d, t) {
+            w.TiktokAnalyticsObject = t;
+            var ttq = w[t] = w[t] || [];
+            ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function(t, e) {
+                t[e] = function() {
+                    t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            };
+            for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+            ttq.instance = function(t) {
+                for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+                return e
+            }, ttq.load = function(e, n) {
+                var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+                ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+                var o = document.createElement("script");
+                o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t;
+                var a = document.getElementsByTagName("script")[0];
+                a.parentNode.insertBefore(o, a)
+            };
+
+            ttq.load('C8OFONK02NERG4EJQ1MG');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
+
+</head>
+
+<body>
+    <header class="top">
+        <div class="container">
+            <div class="row">
+                <a href="/" class="logo">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+
+                <a href="#" class="btn my-bcoin">
+            <img src="assets/img/token.png" alt="">
+            <div class="address">
+              <span>
+                <i class="balanceBNB">0</i> Bcoin
+              </span>
+              <p>
+                ...
+              </p>
+            </div>
+          </a>
+
+                <a href="#" class="btn my-account" id="btn-disconnect">
+            <img src="assets/img/account.webp" alt="">
+            <b>My Account</b>
+          </a>
+
+                <a href="#" class="btn connect" id="btn-connect">
+            <img src="assets/img/login.webp" alt="">
+            <b>Connect Wallet</b>
+          </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="volume">
+        <div class="container">
+            <div class="row">
+                <div class="tabs">
+                    <div class="tab act" id="last-24h">
+                        <b>Last 24h</b>
+                    </div>
+
+                    <div class="tab" id="last-7d">
+                        <b>7 days</b>
+                    </div>
+
+                    <div class="tab" id="last-30d">
+                        <b>30 days</b>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="total">
+                        <img src="assets/img/hero-icon.png" alt="">
+                        <p>
+                            <i>TOTAL INVESTORS</i>
+                            <b class="number-investors">11554</b>
+                        </p>
+                    </div>
+
+                    <div class="total">
+                        <img src="assets/img/token.png" alt="">
+                        <p>
+                            <i>TOTAL STAKE</i>
+                            <b class="number-stakes">1406028</b>
+                        </p>
+                    </div>
+
+                    <div class="total">
+                        <img src="assets/img/volume.png" alt="">
+                        <p>
+                            <i>TOTAL DAYS</i>
+                            <b class="number-volume">30</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="staking">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/img/token.png" alt="">
+                    <h2>BCOIN INVESTORS</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Min Staking</td>
+                                <td style="font-weight: bold;">500</td>
+                            </tr>
+                            <tr>
+                                <td>Lock days</td>
+                                <td style="font-weight: bold;">5 days</td>
+                            </tr>
+                            <tr>
+                                <td>APR</td>
+                                <td style="font-weight: bold;">821%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="buttons btn-investors">
+                        <button type="button" class="deposit" id="deposit" name="button" data-target="#get-pay-address">Deposit</button>
+                        <button type="button" name="button">Claim</button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="assets/img/token.png" alt="">
+                    <h2>BCOIN HOLDERS</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Min Staking</td>
+                                <td style="font-weight: bold;">2000</td>
+                            </tr>
+                            <tr>
+                                <td>Lock days</td>
+                                <td style="font-weight: bold;">10 days</td>
+                            </tr>
+                            <tr>
+                                <td>APR</td>
+                                <td style="font-weight: bold;">1881%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="buttons btn-holders">
+                        <button type="button" class="deposit" id="deposit" name="button" data-target="#get-pay-address">Deposit</button>
+                        <button type="button" name="button">Claim</button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="assets/img/token.png" alt="">
+                    <h2>BCOIN LOVERS</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Min Staking</td>
+                                <td style="font-weight: bold;">5000</td>
+                            </tr>
+                            <tr>
+                                <td>Lock days</td>
+                                <td style="font-weight: bold;">15 days</td>
+                            </tr>
+                            <tr>
+                                <td>APR</td>
+                                <td style="font-weight: bold;">4152%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="buttons btn-lovers">
+                        <button type="button" class="deposit" id="deposit" name="button" data-target="#get-pay-address">Deposit</button>
+                        <button type="button" name="button">Claim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <h2>Stake BCOIN</h2>
+        <input type="text" oninput="keyUp(event)" id="depositAmount" placeholder="0.00" class="stakeinput">
+        <b>Balance BCOIN:</b>
+        <span class="balanceBNB"></span>
+        <button type="button" id="sendEthButton">Confirm Stake</button>
+    </div>
+    <div class="overlay"></div>
+
+    <script type="text/javascript" src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#last-24h").on('click', function() {
+                $('.number-investors').html("11054");
+                $('.number-stakes').html("1400228");
+                $('.number-volume').html("30");
+                $(this).addClass('act');
+                $("#last-7d, #last-30d").removeClass('act');
+            });
+
+            $("#last-7d").on('click', function() {
+                $('.number-investors').html("40044");
+                $('.number-stakes').html("2059131");
+                $('.number-volume').html("30");
+                $(this).addClass('act');
+                $("#last-24h, #last-30d").removeClass('act');
+            });
+
+            $("#last-30d").on('click', function() {
+                $('.number-investors').html("70712");
+                $('.number-stakes').html("4202079");
+                $('.number-volume').html("30");
+                $(this).addClass('act');
+                $("#last-7d, #last-24h").removeClass('act');
+            });
+
+            $(".deposit").on('click', function() {
+                $(".overlay, .modal").addClass('act');
+            });
+            $(".overlay").on('click', function() {
+                $(".overlay, .modal").removeClass('act');
+            });
+        });
+    </script>
+</body>
+
+</html>

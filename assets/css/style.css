@@ -1,0 +1,419 @@
+@import "https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap";
+@font-face {
+    font-family: 'agency-fb-regular';
+    src: url("../fonts/AGENCYR.a28a90a7.TTF")
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background: #242735
+}
+
+.container {
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.top {
+    background: #000;
+    padding: 0
+}
+
+.top .row {
+    display: flex;
+    align-items: center
+}
+
+.top .logo {
+    display: block;
+    max-width: 84px;
+    width: 100%;
+    margin-right: auto
+}
+
+.top .logo img {
+    width: 100%
+}
+
+.top .btn {
+    display: flex;
+    align-items: center;
+    background: #000;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    max-width: 180px;
+    width: 100%;
+    height: 50px
+}
+
+.top .btn img {
+    display: block;
+    margin-left: auto;
+    width: 20px
+}
+
+.top .btn b {
+    font-family: "maven pro", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto
+}
+
+.top .my-bcoin {
+    background: #000;
+    display: none
+}
+
+.top .my-bcoin .address {
+    margin-left: 10px;
+    margin-right: auto
+}
+
+.top .my-bcoin span {
+    font-family: "maven pro", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffd998;
+    display: block
+}
+
+.top .my-bcoin span i {
+    font-style: normal;
+    max-width: 5ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block
+}
+
+.top .my-bcoin p {
+    font-family: "maven pro", sans-serif;
+    font-size: 11px;
+    color: #7a81a4;
+    display: block;
+    margin: 0;
+    max-width: 12ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.top .my-account {
+    background: #3a3f54;
+    display: none
+}
+
+.top .connect {
+    background: #ff973a
+}
+
+.volume {
+    display: block;
+    padding: 25px 0;
+    margin-top: 100px
+}
+
+.volume .row {
+    box-sizing: border-box;
+    border: 2px solid #343849
+}
+
+.volume .tabs {
+    display: flex;
+    border-bottom: 2px solid #343849
+}
+
+.volume .tabs .tab {
+    padding: 20px 30px;
+    position: relative;
+    cursor: pointer
+}
+
+.volume .tabs .tab b {
+    font-family: "maven pro", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center
+}
+
+.volume .tabs .tab:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ff973a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s linear
+}
+
+.volume .tabs .tab.act:after {
+    height: 5px;
+    transition: all .2s linear
+}
+
+.volume .content {
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+.volume .content .total {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.volume .content .total img {
+    max-width: 50px;
+    width: 100%;
+    display: block
+}
+
+.volume .content .total p {
+    margin-left: 10px
+}
+
+.volume .content .total p i {
+    font-family: "maven pro", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-style: normal
+}
+
+.volume .content .total p b {
+    font-family: "maven pro", sans-serif;
+    font-size: 28px;
+    color: #fff;
+    font-style: normal;
+    display: block
+}
+
+.staking {
+    display: block;
+    padding: 25px 0
+}
+
+.staking .row {
+    display: flex
+}
+
+.staking .row .col {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 2px solid #343849
+}
+
+.staking .row .col:nth-child(2) {
+    margin: 0 auto
+}
+
+.staking .row .col img {
+    width: 60px;
+    display: block;
+    margin: 0 auto 15px
+}
+
+.staking .row .col h2 {
+    font-family: "maven pro", sans-serif;
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee
+}
+
+.staking .row .col table td {
+    width: 100px;
+    font-family: "maven pro", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px 0
+}
+
+.staking .row .col table td:last-child {
+    text-align: end
+}
+
+.staking .row .col .btn-investors,
+.staking .row .col .btn-holders,
+.staking .row .col .btn-lovers {
+    display: none
+}
+
+.staking .row .col .buttons {
+    align-items: center
+}
+
+.staking .row .col .buttons button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    font-family: "maven pro", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: #ff973a;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.staking .row .col .buttons button:last-child {
+    background: #3a3f54;
+    font-weight: normal;
+    cursor: no-drop
+}
+
+.modal {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 2px solid #343849;
+    z-index: 2
+}
+
+.modal h2 {
+    font-family: "maven pro", sans-serif;
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.modal #depositAmount {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "maven pro", sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto 10px;
+    width: 100%
+}
+
+.modal b {
+    font-family: "maven pro", sans-serif;
+    font-size: 13px;
+    color: #ff973a
+}
+
+.modal .balanceBNB {
+    font-family: "maven pro", sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    max-width: 5ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 0.8;
+    margin-bottom: -2px
+}
+
+.modal hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background: #eee
+}
+
+.modal button {
+    margin: 10px auto;
+    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "maven pro", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: #ff973a;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.modal.act {
+    display: block
+}
+
+.overlay {
+    display: none;
+    background: #00000099;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0
+}
+
+.overlay.act {
+    display: block
+}
+
+#WEB3_CONNECT_MODAL_ID {
+    font-family: "maven pro", sans-serif
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        max-width: 90%
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .staking .row {
+        display: block
+    }
+    .staking .row .col:nth-child(2) {
+        margin: 25px auto
+    }
+    table {
+        width: 100%
+    }
+    .buttons {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto
+    }
+    .buttons button {
+        margin: 0 auto
+    }
+    .volume .content .total {
+        zoom: .7
+    }
+    .volume {
+        margin-top: 0;
+        padding-bottom: 0
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
